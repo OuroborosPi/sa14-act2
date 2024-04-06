@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#animatedBlock {
+    width: 100px;
+    height: 100px;
+    background-color: #0a84ff;
+    position: absolute;
+    top: calc(50% - 50px);
+    transition: transform 2s ease-in-out; /* Smooth transition for the movement */
+}
+
+button {
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
