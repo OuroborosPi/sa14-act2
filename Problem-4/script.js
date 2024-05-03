@@ -21,7 +21,8 @@ function validateForm() {
     // Validate Email
     const email = document.getElementById('email');
     const emailError = email.nextElementSibling;
-    if (!email.validity.valid) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value)) {
         emailError.textContent = "Please enter a valid email address.";
         emailError.style.display = "block";
         email.classList.add('error');
